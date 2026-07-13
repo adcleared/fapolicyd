@@ -1,3 +1,13 @@
+1.5.1
+- Fix logging to syslog/journald to not deadlock on log rotation
+- Make logging asynchronous and best effort once configured
+- Render decision logs before writing fanotify replies
+- Fix Debian backend to work again
+- Load debdb trust data in a helper process
+- Add filter support for Debian backend
+- Tighten debdb MD5 backend error handling
+- Make deb helper scripts fail safely
+
 1.5
 - Increase the line length of config files (Renaud Métrich)
 - Add fapolicyd-cli --check-rules to validate rules
